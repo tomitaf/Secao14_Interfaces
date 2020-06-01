@@ -1,6 +1,4 @@
 ﻿using System;
-
-
 namespace Secao14_Interfaces.Entities
 {
     class Circulo : AbstrataForma

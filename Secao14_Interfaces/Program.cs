@@ -3,6 +3,8 @@ using System.Globalization;
 using Secao14_Interfaces.Entities;
 using Secao14_Interfaces.Entities.Enums;
 using Secao14_Interfaces.Services;
+using System.IO;    //Para usar a classe StreamReader
+using System.Collections.Generic;
 
 namespace Secao14_Interfaces
 {
@@ -12,7 +14,42 @@ namespace Secao14_Interfaces
         {
             //SolucaoSemInterfaces();
             //Secao14_ExFixacao();
-            HerancaInterface();
+            //HerancaInterface();
+            InterfaceIComparable();
+        }
+
+        public static void InterfaceIComparable()
+        {
+            /*string path = @"C:\temp\Interfaces\nomes.txt";
+            List<string> nomes = new List<string>();
+            using (StreamReader sr = File.OpenText(path))
+            {
+                
+                while (!sr.EndOfStream)
+                {
+                    nomes.Add(sr.ReadLine());   
+                }
+            }
+            nomes.Sort();
+            foreach(string nome in nomes)
+            {
+                Console.WriteLine(nome);
+            }*/
+
+            string path = @"C:\temp\Interfaces\funcionarios.csv";
+            List<Funcionario> funcionarios = new List<Funcionario>();
+            using(StreamReader sr = File.OpenText(path))
+            {
+                while (!sr.EndOfStream)
+                {
+                    funcionarios.Add(new Funcionario(sr.ReadLine()));
+                }
+            }
+            funcionarios.Sort();
+            foreach(Funcionario funcionario in funcionarios)
+            {
+                Console.WriteLine(funcionario);
+            }
         }
 
         public static void HerancaInterface()
