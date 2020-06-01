@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29503.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Secao14_Interfaces", "Secao14_Interfaces\Secao14_Interfaces.csproj", "{2027ECCE-6924-4B9B-9ADC-E10B855DC36D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2027ECCE-6924-4B9B-9ADC-E10B855DC36D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2027ECCE-6924-4B9B-9ADC-E10B855DC36D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2027ECCE-6924-4B9B-9ADC-E10B855DC36D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2027ECCE-6924-4B9B-9ADC-E10B855DC36D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AE9122EA-633F-4B28-A55E-5CB003A12E08}
+	EndGlobalSection
+EndGlobal
